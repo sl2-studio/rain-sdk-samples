@@ -22,7 +22,7 @@
     ACCOUNT,
   }
 
-  async function createBalanceTier(tierContractOne, tierContractTwo) {
+  async function createCombinationTier(tierContractOne, tierContractTwo) {
     return new Promise(function (resolve, reject) {
       tierContractOne = tierContractOne.toLowerCase();
       if (!ethers.utils.isAddress(tierContractOne)) {
@@ -87,7 +87,7 @@
 
   console.log("Creating Combination Tier, please wait.");
 
-  createBalanceTier(
+  createCombinationTier(
     "0x947bB1edba72a812E441d6CCaa514a1227721A7a",
     "0xC48E371edc35Bc037f4d7140668f8cDC4a02a94a"
   )
