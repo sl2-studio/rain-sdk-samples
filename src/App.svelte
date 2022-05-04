@@ -6,10 +6,12 @@
 
   // Rain SDK
   import CreateBalanceTier from "./components/RainSDK/CreateBalanceTier.svelte";
+  import CreateCombinationTier from "./components/RainSDK/CreateCombinationTier.svelte";
 
   let routes = {
     "/": Landing,
     "/create/balance/tier": CreateBalanceTier,
+    "/create/combination/tier": CreateCombinationTier,
   };
 </script>
 
